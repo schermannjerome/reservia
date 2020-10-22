@@ -3,44 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;500;600;700&display=swap" rel="stylesheet">
+    <link href="fontawesome/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div> <!--logo-->
-            <a href="#"><img src="images/logo/Reservia.svg" alt="logo reservia" id="logo"></a>
-            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-            <p>En plein centre ville ou en pleine nature</p>
-        </div> <!-- fin logo -->
+        <div class="header"> <!--logo-->
+
+            <div class="logo">
+                <a href="#"><img src="images/logo/Reservia.svg" alt="logo reservia" id="logo"></a>
+                <h1 class="header-title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
             
-        <nav> <!--Menu haut droit-->
-            <a href="#">Hébergements</a>
-            <a href="#">Activités</a>
-            <a href="#" class="inscription">S'inscrire</a>
-        </nav>  <!-- fin menu-->      
+            </div> <!-- fin logo -->
+            
+            <nav class="header-nav"> <!--Menu haut gauche-->
+                <a href="#" class="menu-item">Hébergements</a>
+                <a href="#" class="menu-item">Activités</a>
+            </nav>
+            <nav class="nav-inscription">
+                <a href="#" class="inscription">S'inscrire</a>
+            </nav>    
     </header>
 
-    <form>  <!--barre de recherche-->
+    <form id="search">
+
+        <div class="icon-search"> 
+            <i class="fas fa-map-marker-alt"></i>
+        </div>
+
         <input type="search" id="site-search" name="rechercher">
-        <button>Rechercher</button>
+        <button class="btn-search">Rechercher</button>
+
     </form>
     
-    <div> <!--filtre de recherche-->
-        <h1>Filtres</h1>
-        <div>  
-            <a href="#">Economique</a>
+    <div class="header-filtre">
+
+        <h2>Filtres</h2>
+
+        <div class="filtre">
+                <i class="fas fa-money-bill-wave"></i>
+                <a href="#">Economique</a>
         </div>
-        <div >
+
+        <div class="filtre">
+            <i class="fas fa-child"></i>
             <a href="#">Familial</a>
         </div>
-        <div>
+
+        <div class="filtre">
+            <i class="fas fa-heart"></i>
             <a href="#">Romantique</a>
         </div>
-        <div>
+
+        <div class="filtre">
+            <i class="fas fa-dog"></i>
             <a href="#">Animaux autorisés</a>
         </div>
-    </div>
     
 
     <div> <!--Premiere section -->
