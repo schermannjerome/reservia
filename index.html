@@ -10,72 +10,108 @@
 </head>
 <body>
     <header>
-        <div class="header"> <!--logo-->
 
-            <div class="logo">
+        <div class="header">
+
+            <div class="logo"> <!--logo-->
                 <a href="#"><img src="images/logo/Reservia.svg" alt="logo reservia" id="logo"></a>
                 <h1 class="header-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
-            
             </div> <!-- fin logo -->
-            
+
             <nav class="header-nav"> <!--Menu haut gauche-->
                 <a href="#" class="menu-item">Hébergements</a>
                 <a href="#" class="menu-item">Activités</a>
             </nav>
+                
             <nav class="nav-inscription">
                 <a href="#" class="inscription">S'inscrire</a>
-            </nav>    
+            </nav>
+      
+       </div>    
+
     </header>
 
-    <form id="search">
+    <div class="container-top">
+        <form id="search">
 
-        <div class="icon-search"> 
-            <i class="fas fa-map-marker-alt"></i>
-        </div>
+            <div class="icon-search"> 
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <input type="search" id="site-search" name="rechercher">
+            <button class="btn-search">Rechercher</button>
 
-        <input type="search" id="site-search" name="rechercher">
-        <button class="btn-search">Rechercher</button>
-
-    </form>
+        </form>
     
-    <div class="header-filtre">
+        <div class="header-filtre">
 
-        <h2>Filtres</h2>
+            <h2>Filtres</h2>
 
-        <div class="filtre">
-                <i class="fas fa-money-bill-wave"></i>
-                <a href="#">Economique</a>
+            <div class="filtre">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <a href="#">Economique</a>
+            </div>
+
+            <div class="filtre">
+                <i class="fas fa-child"></i>
+                <a href="#">Familial</a>
+            </div>
+
+            <div class="filtre">
+                <i class="fas fa-heart"></i>
+                <a href="#">Romantique</a>
+            </div>
+
+            <div class="filtre">
+                <i class="fas fa-dog"></i>
+                <a href="#">Animaux autorisés</a>
+            </div>
+
         </div>
-
-        <div class="filtre">
-            <i class="fas fa-child"></i>
-            <a href="#">Familial</a>
-        </div>
-
-        <div class="filtre">
-            <i class="fas fa-heart"></i>
-            <a href="#">Romantique</a>
-        </div>
-
-        <div class="filtre">
-            <i class="fas fa-dog"></i>
-            <a href="#">Animaux autorisés</a>
-        </div>
+    </div>  
     
-
-    <div> <!--Premiere section -->
-        <section>
-            
+    <div class="container">
+        <section><!--Premiere section -->  
+            <h1>Hébergements à Marseille</h1>
         </section>
+
         <aside>
+            <h1>Les plus populaires</h1>
         </aside>
+
+        <section>  <!--deuxieme section--> 
+            <h1>Activités à Marseille</h1>
+        </section>
+
     </div>
 
-    <section>  <!--deuxieme section--> 
-    </section>
+    <footer class="footer"> <!--debut du footer-->
+        <div class="col">
+            <h1>A propos</h1>
+            <ul>
+                <li><a href="#">Fonctionnement du site</a></li><br>
+                <li><a href="#">Conditions généréles de vente</a></li><br>
+                <li><a href="#">Données et confidentialité</a></li>
+            </ul>
+        </div>
+        
+        <div class="col">
+            <h1>Nos Hébergements</h1>
+            <ul>
+                <li><a href="#">Charte qualité</a></li><br>
+                <li><a href="#">Soumettre votre hôtel</a></li>
+            </ul>
 
-    <footer> <!--debut du footer-->
+        </div>
+
+        <div class="col">
+            <h1>Assistances</h1>
+            <ul>
+                <li><a href="#">Centre d'aide</a></li><br>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
+
     </footer>
 
 </body>
