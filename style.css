@@ -10,22 +10,36 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 1.4rem;
 }
-
+h1{
+    font-size: 1.8rem;
+}
+h2{
+    font-size: 1.6rem;
+}
 .header {
+    padding: 0px 80px 0px 80px;
     display: flex;
-    padding: 0px 20px 0px 20px;
+    flex-wrap: wrap;
 }
 .logo{
     margin-top: 4px;
+    order: 1;
 }
-.logo h1{
+.logo-title{
+    order: 4;
+}
+.logo-title h1{
     font-size: 2rem;
 }
-.logo p{
+.logo-title p{
     line-height: 0.7rem;
 }
 .header-nav {
     margin-left: auto;
+    order: 2;
+}
+.logo-title{
+    flex-basis: 100%;
 }
 .header-nav a {
     text-decoration: none;
@@ -35,6 +49,9 @@ body {
     font-weight: 700;
     margin-top: 25px;
     display: block;
+}
+.nav-inscription{
+    order: 3;
 }
 .nav-inscription a{
     text-decoration: none;
@@ -64,7 +81,7 @@ body {
     color: #0065FC;
 }
 .container-top{
-    padding: 0px 20px 0px 20px;
+    padding: 0px 80px 0px 80px;
 }
 #search{
     margin-top: 15px;
@@ -72,7 +89,7 @@ body {
 }
 #site-search{
     padding: 10px;
-    outline: none;
+    outline: none; /* supprime contour noir au clic */
     width: 200px;
     font-weight: 600;
     text-align: left;
@@ -87,29 +104,36 @@ body {
 .btn-search{
     padding: 10px;
     border-radius: 0 10px 10px 0;
-    outline: none;
     border: none;
+    outline: none;
     background: #0065FC;
     color: #fff;
     cursor: pointer;
 }
-.header-filtre{
+.header-filter{
     margin-top: 20px;
     display: flex;
 }
-.filtre{
+.filter-title{
+    height: 40px;   
+    align-items: center;
+}
+.filter-title h1{
+    font-size: 1.6rem;
+    margin-right: 20px;
+}
+
+.filter{
     width: auto;
     height: 40px;
+    font-weight: 700;
     border: solid 1px #f2f2f2;
     border-radius: 20px;
     display: flex;
     align-items: center;
     margin-right: 20px;
 }
-.header-filtre h2{
-    font-size: 1.6rem;
-    margin-right: 10px;
-}
+
 .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog{
     width: 40px;
     height: 40px;
@@ -120,41 +144,187 @@ body {
     align-items: center;
     justify-content: center;
 }
-.header-filtre a{
+.header-filter a{
     text-decoration: none;
     color: black;
     margin-left: 10px;
     margin-right: 15px;
 }
-.header-filtre a:hover{
+.header-filter a:hover{
     color: #0065FC;
     font-weight: 700;  
 }
-.header-filtre a:focus{
+.header-filter a:focus{
     color: #0065FC;
     font-weight: 700;
 }
-.container{
+.info{
+    display: flex;
+    align-items: center;
+}
+.info-icone{
+    height: 30px;
+    width: 30px;
+    border: solid 1px #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.fa-info{
+    color: #0065FC;
+}
+
+
+/* ---------------- CSS section --------------*/
+section{
+    margin-top: 20px;
+    padding: 0px 80px 0px 80px;
+    display: flex;
+}
+.section-1{
+    background: #f2f2f2;
+    margin-right: 50px;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+}
+.section-2{
     padding: 0px 20px 0px 20px;
 }
-.footer{
-    background: #f2f2f2;
+.article {
     display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between ;
+
+}
+.mosaic{
+    display: flex;
+    height: 600px;
+    flex-flow: column wrap;
+    align-items: flex-start;
+}
+.item{
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px #d3d3d3 ;
+}
+.item-mosaic{
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px #d3d3d3 ;
+    margin-right: 35px;
+}
+.item-mosaic a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.image-mosaic{
+    background-size: cover;
+    background-position: center;
+    width: 40rem;
+    height: 17rem;
+    border-radius: 10px 10px 0px 0px;
+}
+.image-item {
+    background-size: cover;
+    background-position: center;
+    width: 35rem;
+    height: 17rem;
+    border-radius: 10px 10px 0px 0px;
+    }
+.item a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.height{
+    height: 42rem;
+}
+
+.aside{
+    width: 95rem;
+    background: #f2f2f2;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+}
+.aside-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item-aside{
+    display: flex;
+    margin: auto;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px #d3d3d3 ;
+}
+.image-aside{
+    margin-right: 10px;
+    background-size: cover;
+    background-position: center;
+    min-width: 20rem;
+    height: 19rem;
+    border-radius: 10px 0px 0px 10px;
+}
+.item-aside a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+.fa-star{
+    color: #d3d3d3;
+}
+.fa-star.blue{
+    color: #0065FC;
+}
+.lien{
     padding: 20px;
 }
-.footer h1{
+.lien a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+/* ---------- CSS Footer --------------------*/
+footer{
+    background: #f2f2f2;
+    display: flex;
+    padding: 0px 80px 0px 80px;
+}
+footer h1{
     font-size: 1.4rem;
 }
 footer ul{
     padding: 0;
 }
-.footer li{
+footer li{
     list-style: none;
 }
-.footer li a{
+footer li a{
     text-decoration: none;
     color: black;
 }
 .col{
     flex: auto;
+}
+.col li{
+    line-height: 3rem;
+}
+@media screen and (max-width: 640px){
+    footer{
+        flex-flow: wrap;
+    }
 }
