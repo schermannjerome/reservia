@@ -200,7 +200,7 @@ section{
 }
 .mosaic{
     display: flex;
-    height: 600px;
+    height: 60rem;
     flex-flow: column wrap;
     align-items: flex-start;
 }
@@ -224,30 +224,30 @@ section{
     font-weight: 700;
     font-size: 1.8rem;
 }
-.image-mosaic{
-    background-size: cover;
-    background-position: center;
-    width: 40rem;
-    height: 17rem;
+.image-mosaic img{
+    object-fit: cover;
+    width: 400px;
+    height: 170px;
     border-radius: 10px 10px 0px 0px;
 }
+.height img{
+    height: 420px;
+}
 .image-item {
-    background-size: cover;
-    background-position: center;
-    width: 35rem;
-    height: 17rem;
     border-radius: 10px 10px 0px 0px;
     }
+.image-item img{
+    height: 180px;
+    width: 370px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 00px;
+}
 .item a{
     text-decoration: none;
     color: #000;
     font-weight: 700;
     font-size: 1.8rem;
 }
-.height{
-    height: 42rem;
-}
-
 .aside{
     width: 95rem;
     background: #f2f2f2;
@@ -270,11 +270,23 @@ section{
 }
 .image-aside{
     margin-right: 10px;
-    background-size: cover;
-    background-position: center;
-    min-width: 20rem;
-    height: 19rem;
     border-radius: 10px 0px 0px 10px;
+}
+ .item-aside img{
+    height: 20rem;
+    width: 20rem;
+    margin-right: 15px;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+.lien-aside{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.icon-aside{
+    margin-top: auto;
+    padding-bottom: 15px;
 }
 .item-aside a{
     text-decoration: none;
