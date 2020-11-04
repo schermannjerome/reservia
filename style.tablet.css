@@ -1,0 +1,68 @@
+html{
+    font-size: 50%;
+}
+.header-filter{
+    flex-flow: row wrap;
+}
+
+.filter-title{
+    flex-basis: 100%;
+}
+.filter{
+    margin-bottom: 15px;
+}
+section{
+    flex-flow: column;
+}
+.section-1{
+    order: 2;
+    margin: 0;
+}
+.aside{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+}
+.aside-title{
+    flex-basis: 100%;
+}
+.item-aside{
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+}
+.image-aside{
+    margin: 0;
+}
+.image-aside img{
+    width: 100%;
+    margin: 0;
+    border-radius: 10px 10px 0px 0px;
+}
+.lien-aside{
+    height: 90px;
+}
+.lien-aside p{
+    margin: 0;
+}
+.image-item img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.item{
+    width: 49%;
+}
+
+.mosaic{
+    flex-flow: row wrap;
+    height: auto;
+}
+.item-mosaic{
+    margin-bottom: 30px;
+    margin-right: 0;
+    width: 49%;
+}
+.image-mosaic img{
+    height: 15rem;
+}

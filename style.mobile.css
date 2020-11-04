@@ -1,0 +1,160 @@
+html{
+    font-size: 50%;
+}
+.header {
+    padding: 0rem 2rem 0rem 2rem;
+    flex-flow: row wrap;
+}
+.header-filter{
+    flex-flow: row wrap;
+}
+.logo{
+    order: 1;
+}
+.nav-inscription{
+    order: 2;
+    margin: right;
+    margin-left: auto;
+}
+.nav-inscription{
+    font-size: 1.8rem;
+}
+.header-nav{
+    order: 3;
+    flex-basis: 100%;
+    font-size: 1.6rem;
+    margin-top: 20px;
+}
+.menu-item{
+    width: 49%;
+    content: "";
+    height: 0.25rem; /* hauteur de la ligne */
+    margin-bottom: 25px;
+    background-color: #f2f2f2;
+}
+.menu-item:before{
+    margin-bottom: -35px;
+}
+.logo-title{
+    order: 4;
+}
+.logo-title h1{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+    font-size: 2.5rem;
+}
+.logo-title p{
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    font-size: 1.8rem;
+}
+.container-top{
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+#search{
+    margin-top: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+#site-search{
+    width: 60vw;
+}
+.smart{
+    visibility: visible;
+    border-radius: 10px;
+    border: none;
+    width: 40px;
+    background-color: #0065FC;
+    outline: none;
+    color: #fff;
+}
+.btn-search{
+    display: none;
+}
+.fa-map-marker-alt{
+    font-size: 1.8rem;
+}
+.icon-search{
+    padding: 1.9rem;
+}
+.filter-title{
+    flex-basis: 100%;
+}
+.filter-title h1{
+    font-size: 1.8rem;
+}
+.filter{
+    margin-bottom: 2rem;
+}
+.header-filter a{
+    font-size: 1.8rem;
+}
+.info p{
+    font-size: 1.8rem;
+}
+.filter{
+    border: solid 2px #f2f2f2;
+}
+.info p{
+    font-size: 1.8rem;
+}
+.filter{
+    border: solid 2px #f2f2f2;
+}    
+section{
+    flex-flow: row wrap;
+    padding: 0px 20px 0px 20px;
+}
+.section-1{
+    margin: 0;
+    order: 2;
+    background: #fff;
+}
+.article{
+    flex-flow: row wrap;
+}
+.aside{
+    min-width: 390px;
+    order: 1;
+}
+.aside{
+    min-width: 100%;
+}
+.image-aside img{
+    width: 150px;
+    height: 140px;
+}
+.lien a, p{
+    margin: 0;
+}
+.image-item img{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%; 
+    }
+.mosaic{
+    flex-flow: column;
+    height: auto;
+}
+.item-mosaic{
+    margin-bottom: 30px;
+    margin-right: 0;
+    width: 100%;
+}
+.image-mosaic img{
+    height: 15rem;
+    width: 100%; 
+    max-width: none;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 00px;
+}
+footer{
+    flex-flow: row wrap;
+    padding: 0rem 2rem 0rem 2rem;
+}
+.col{
+    width: 100%;
+}
