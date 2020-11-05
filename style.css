@@ -175,7 +175,7 @@ h3{
 /* ------------------------------- info --------------------*/
 .info{
     display: flex;
-    align-items: center;
+    padding-top: 1.5rem;
 }
 .info-icone{
     height: 30px;

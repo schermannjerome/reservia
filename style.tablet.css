@@ -4,7 +4,9 @@ html{
 .header-filter{
     flex-flow: row wrap;
 }
-
+.nav-inscription{
+    margin-top: 6px;
+}
 .filter-title{
     flex-basis: 100%;
 }
@@ -53,7 +55,6 @@ section{
 .item{
     width: 49%;
 }
-
 .mosaic{
     flex-flow: row wrap;
     height: auto;
