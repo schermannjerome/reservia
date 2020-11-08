@@ -220,10 +220,15 @@ article a{
     color: #000;
     font-weight: 700;
     flex-basis: 100%;
+    display: block;
+    margin-bottom: 2rem;
+}
+.lien{
+    display: block;
+    margin :1rem 0rem 0rem 1rem;
 }
 .lien a, p{
     display: block;
-    margin: 1rem 0rem 0rem 1rem;
 }
 .icon {
     padding: 1rem;
@@ -249,8 +254,10 @@ article a{
     text-decoration: none;
     color: #000;
     font-weight: 700;
-    font-size: 1.8rem;
-    
+    font-size: 1.8rem; 
+}
+.item p{
+    margin-left: 1rem;
 }
 /*----------------------------------------- aside ------------------*/
 .aside{
