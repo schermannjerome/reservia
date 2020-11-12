@@ -129,12 +129,13 @@ h3{
 .header-filter{
     margin-top: 20px;
     display: flex;
+    align-items: center;
 }
 .filter-title{
     height: 40px;   
-    align-items: center;
+    margin-bottom: 10px;
 }
-.filter-title h1{
+.filter-title h3{
     font-size: 1.6rem;
     margin-right: 2rem;
 }
@@ -148,6 +149,7 @@ h3{
     align-items: center;
     margin-right: 2rem;
 }
+
 .header-filter a{
     text-decoration: none;
     color: black;
@@ -192,8 +194,8 @@ h3{
 }
 
 
-/* --------------------------------------------- CSS section ------------------------------------------------*/
-section{
+/* --------------------------------------------- CSS main ------------------------------------------------*/
+main{
     width: 100%;
     padding: 0rem 2rem 0rem 2rem;
     margin-top: 2rem;
@@ -270,7 +272,7 @@ article a{
 .aside-title{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* reparti les elements sur l'axe horizontal */
 }
 .item-aside{
     display: flex;
@@ -317,7 +319,20 @@ article a{
 .section-2{
     width: 100%;
 }
+section h2{
+    display: block;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    margin-left: 20px;
+}
 /*-------------------------------- mosaic ----------------------------*/
+section{
+    width: 100%;
+    padding: 0rem 2rem 0rem 2rem;
+    margin-top: 2rem;
+    padding: 0rem 5rem 0rem 5rem;
+    
+}
 .mosaic{
     display: flex;
     height: 600px;

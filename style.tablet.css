@@ -13,7 +13,7 @@ html{
 .filter{
     margin-bottom: 15px;
 }
-section{
+main{
     flex-flow: column;
 }
 .section-1{
